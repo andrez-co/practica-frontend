@@ -1,0 +1,102 @@
+[
+  {
+    "id": "PQR-2026-001",
+    "solicitante": "Carlos Eduardo Mendoza",
+    "categoria": "Agua",
+    "descripcion": "Fuga de agua potable en la intersección de la Calle 45 con Carrera 15, provocando desperdicio y baja presión en las viviendas aledañas.",
+    "estado": "Resuelto",
+    "fechaRadicacion": "2026-08-01",
+    "plazoLegal": "15 días hábiles",
+    "respuestaOficial": "Personal técnico de la Empresa de Acueducto asistió el 2026-08-03, sustituyó el tramo de tubería dañado de 3 pulgadas y restableció la presión normal del servicio."
+  },
+  {
+    "id": "PQR-2026-002",
+    "solicitante": "María Fernanda Gómez",
+    "categoria": "Basuras",
+    "descripcion": "Incumplimiento en las rutas de recolección de basura en el barrio El Prado durante la última semana, generando acumulación de residuos en vía pública.",
+    "estado": "En trámite",
+    "fechaRadicacion": "2026-08-18",
+    "plazoLegal": "15 días hábiles",
+    "respuestaOficial": "La solicitud fue trasladada a la empresa aseadora prestadora del servicio. Se programó ruta especial de contingencia para atender el sector."
+  },
+  {
+    "id": "PQR-2026-003",
+    "solicitante": "Jorge Luis Ramírez",
+    "categoria": "Alumbrado",
+    "descripcion": "Falla en tres luminarias LED del parque principal del sector Norte, lo cual genera inseguridad durante las horas nocturnas.",
+    "estado": "Resuelto",
+    "fechaRadicacion": "2026-08-05",
+    "plazoLegal": "10 días hábiles",
+    "respuestaOficial": "Cuadrilla de mantenimiento sustituyó los fotocroles y fotoceldas averiadas en las luminarias #102, #103 y #104. El alumbrado opera con normalidad."
+  },
+  {
+    "id": "PQR-2026-004",
+    "solicitante": "Ana Lucía Martínez",
+    "categoria": "Agua",
+    "descripcion": "Cobro excesivo en la factura del servicio de agua correspondiente al mes de julio, sin variaciones en el consumo habitual del predio.",
+    "estado": "En trámite",
+    "fechaRadicacion": "2026-08-15",
+    "plazoLegal": "15 días hábiles",
+    "respuestaOficial": "Reclamo por facturación en proceso de revisión técnica y auditoría del medidor. Se notificará la resolución tras la inspección domiciliaria."
+  },
+  {
+    "id": "PQR-2026-005",
+    "solicitante": "Roberto Antonio Silva",
+    "categoria": "Basuras",
+    "descripcion": "Solicitud de instalación de contenedores comunitarios de basura en la zona comercial de la Avenida Central para evitar puntos críticos.",
+    "estado": "Resuelto",
+    "fechaRadicacion": "2026-07-28",
+    "plazoLegal": "30 días hábiles",
+    "respuestaOficial": "Se completó la evaluación técnica y se instalaron 2 contenedores de carga lateral de 2.400 litros en la Av. Central con Calle 12."
+  },
+  {
+    "id": "PQR-2026-006",
+    "solicitante": "Patricia Elena Morales",
+    "categoria": "Alumbrado",
+    "descripcion": "Poste de alumbrado público con inclinación peligrosa tras colisión vehicular en la Transversal 8 con Calle 50.",
+    "estado": "En trámite",
+    "fechaRadicacion": "2026-08-20",
+    "plazoLegal": "5 días hábiles",
+    "respuestaOficial": "Área de emergencias aseguró la zona. La reposición de la estructura de concreto y red eléctrica está programada prioritariamente."
+  },
+  {
+    "id": "PQR-2026-007",
+    "solicitante": "Guillermo Andrés Castro",
+    "categoria": "Agua",
+    "descripcion": "Tapa de alcantarillado fracturada frente a la entrada del colegio comunitario, representando un alto riesgo para los peatones y estudiantes.",
+    "estado": "Resuelto",
+    "fechaRadicacion": "2026-08-10",
+    "plazoLegal": "5 días hábiles",
+    "respuestaOficial": "Se instaló una nueva tapa de hierro dúctil de alta resistencia para tránsito pesado el día 2026-08-12."
+  },
+  {
+    "id": "PQR-2026-008",
+    "solicitante": "Sofia Isabel Vargas",
+    "categoria": "Basuras",
+    "descripcion": "Presencia de escombros y poda de árboles abandonados en la berma de la carrera 30 con calle 80 por parte de terceros no identificados.",
+    "estado": "Resuelto",
+    "fechaRadicacion": "2026-08-02",
+    "plazoLegal": "10 días hábiles",
+    "respuestaOficial": "Operativo especial de recolección de escombros de la alcaldía retiró 4 toneladas de material vegetal y escombros de la vía pública."
+  },
+  {
+    "id": "PQR-2026-009",
+    "solicitante": "Fernando José Herrera",
+    "categoria": "Alumbrado",
+    "descripcion": "Solicitud de expansión de la red de alumbrado público en el sendero peatonal del parque del barrio La Esperanza.",
+    "estado": "En trámite",
+    "fechaRadicacion": "2026-08-12",
+    "plazoLegal": "30 días hábiles",
+    "respuestaOficial": "El proyecto fue incorporado en el plan de expansión de infraestructura luminaria para el IV trimestre del año en curso."
+  },
+  {
+    "id": "PQR-2026-010",
+    "solicitante": "Claudia Marcela Ríos",
+    "categoria": "Agua",
+    "descripcion": "Baja presión recurrente del agua potable en los pisos superiores del conjunto residencial Los Alcaparros.",
+    "estado": "En trámite",
+    "fechaRadicacion": "2026-08-19",
+    "plazoLegal": "15 días hábiles",
+    "respuestaOficial": "Se agendó prueba de manometría e inspección de válvulas reguladoras de presión en la red matriz de distribución del sector."
+  }
+]
