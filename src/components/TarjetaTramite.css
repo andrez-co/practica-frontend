@@ -1,0 +1,104 @@
+.tarjeta-tramite {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  position: relative;
+  overflow: hidden;
+}
+
+.tarjeta-tramite::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #003399, #0055ff);
+  opacity: 0.9;
+}
+
+.tarjeta-tramite:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px -5px rgba(0, 51, 153, 0.15), 0 8px 8px -5px rgba(0, 51, 153, 0.04);
+  border-color: #b3c6ff;
+}
+
+.tarjeta-tramite__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.tarjeta-tramite__categoria {
+  display: inline-block;
+  background-color: #e6ecff;
+  color: #003399;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 51, 153, 0.15);
+}
+
+.tarjeta-tramite__icono {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #f0f4ff;
+  color: #003399;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjeta-tramite__titulo {
+  color: #0d1b3e;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+}
+
+.tarjeta-tramite__descripcion {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 1.5rem 0;
+  flex-grow: 1;
+}
+
+.tarjeta-tramite__footer {
+  margin-top: auto;
+}
+
+.tarjeta-tramite__btn {
+  background-color: transparent;
+  color: #003399;
+  border: 1px solid #003399;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.tarjeta-tramite__btn:hover {
+  background-color: #003399;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 51, 153, 0.2);
+}
