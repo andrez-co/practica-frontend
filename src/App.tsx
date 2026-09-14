@@ -312,10 +312,6 @@ function App() {
     }
   }, [pagina, user, userName, userEmail]);
 
-  // Compute Metrics
-  const totalCount = pqrsList.length;
-  const resueltosCount = useMemo(() => pqrsList.filter((i) => i.estado.toLowerCase() === 'resuelto').length, [pqrsList]);
-  const tramiteCount = useMemo(() => pqrsList.filter((i) => i.estado.toLowerCase() === 'en trámite').length, [pqrsList]);
 
   // Counts for the Apartados (Enviadas vs Respondidas)
   const enviadasCount = useMemo(() => {
