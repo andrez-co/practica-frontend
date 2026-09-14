@@ -1,0 +1,274 @@
+/* ==========================================================================
+   CONFIRM DELETE MODAL - MINIMALIST EXECUTIVE SAAS DESIGN
+   ========================================================================== */
+
+.cd-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 1.25rem;
+  animation: cdOverlayFade 0.15s ease-out;
+}
+
+.cd-dialog {
+  background: #FFFFFF;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 440px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.12), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: cdDialogSlide 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Header */
+.cd-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.35rem 0.85rem;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+.cd-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.cd-danger-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #FEF2F2;
+  border: 1px solid #FEE2E2;
+  color: #DC2626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cd-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0F172A;
+  letter-spacing: -0.01em;
+}
+
+.cd-close-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #9CA3AF;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cd-close-btn:hover:not(:disabled) {
+  background: #F3F4F6;
+  color: #374151;
+  border-color: #E5E7EB;
+}
+
+/* Body */
+.cd-body {
+  padding: 1.15rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  text-align: left;
+}
+
+.cd-message {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #4B5563;
+  line-height: 1.5;
+}
+
+/* Item Preview Card */
+.cd-item-card {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.cd-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.cd-item-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #0B2545;
+}
+
+.cd-item-cat {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.12rem 0.45rem;
+  border-radius: 4px;
+  background: #EFF6FF;
+  color: #1D4E89;
+  border: 1px solid #BFDBFE;
+}
+
+.cd-item-cat--basuras {
+  background: #F0FDF4;
+  color: #166534;
+  border-color: #BBF7D0;
+}
+
+.cd-item-cat--alumbrado {
+  background: #FAF5FF;
+  color: #6B21A8;
+  border-color: #E9D5FF;
+}
+
+.cd-item-sub {
+  font-size: 0.75rem;
+  color: #64748B;
+  font-weight: 500;
+}
+
+.cd-item-desc {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #334155;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Footer */
+.cd-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.65rem;
+  padding: 0.95rem 1.35rem 1.25rem;
+  background: #FAFAFA;
+  border-top: 1px solid #F3F4F6;
+}
+
+.cd-btn {
+  height: 36px;
+  padding: 0 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  border: 1px solid transparent;
+}
+
+.cd-btn--cancel {
+  background: #FFFFFF;
+  color: #374151;
+  border-color: #D1D5DB;
+}
+
+.cd-btn--cancel:hover:not(:disabled) {
+  background: #F9FAFB;
+  color: #111827;
+  border-color: #9CA3AF;
+}
+
+.cd-btn--danger {
+  background: #DC2626;
+  color: #FFFFFF;
+  border-color: #DC2626;
+  box-shadow: 0 1px 2px rgba(220, 38, 38, 0.15);
+}
+
+.cd-btn--danger:hover:not(:disabled) {
+  background: #B91C1C;
+  border-color: #B91C1C;
+  box-shadow: 0 2px 4px rgba(220, 38, 38, 0.2);
+}
+
+.cd-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cd-spinner {
+  width: 13px;
+  height: 13px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  border-top-color: #FFFFFF;
+  animation: cdSpin 0.65s linear infinite;
+}
+
+/* Animations */
+@keyframes cdOverlayFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cdDialogSlide {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes cdSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .cd-footer {
+    flex-direction: column-reverse;
+  }
+
+  .cd-btn {
+    width: 100%;
+  }
+}

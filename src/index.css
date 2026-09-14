@@ -1,13 +1,25 @@
 :root {
-  --color-primary: #003399;
-  --color-primary-dark: #002266;
-  --color-primary-light: #0044cc;
-  --color-accent: #00b4d8;
-  --color-bg: #f8fafc;
-  --color-surface: #ffffff;
-  --color-text-main: #1e293b;
-  --color-text-muted: #64748b;
-  --font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  /* Paleta Oficial: Blanco, Azul Oscuro y Negro */
+  --blanco: #FFFFFF;
+  --gris-claro: #F4F5F7;
+  --negro: #0F0F10;
+  --azul-noche: #0B2545;
+  --azul-acero: #1D4E89;
+  --gris-pizarra: #6B7280;
+  --borde-suave: #E5E7EB;
+  --borde-medio: #D1D5DB;
+
+  /* Aliases semánticos */
+  --color-primary: var(--azul-noche);
+  --color-primary-dark: #071a32;
+  --color-primary-light: var(--azul-acero);
+  --color-accent: var(--azul-acero);
+  --color-bg: var(--blanco);
+  --color-bg-alt: var(--gris-claro);
+  --color-surface: var(--blanco);
+  --color-text-main: var(--negro);
+  --color-text-muted: var(--gris-pizarra);
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -32,3 +44,4 @@ body {
   min-height: 100vh;
   width: 100%;
 }
+

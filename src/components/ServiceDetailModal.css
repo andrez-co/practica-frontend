@@ -1,0 +1,268 @@
+/* ==========================================================================
+   Service Detail Modal - Paleta Blanco, Azul Oscuro y Negro
+   --blanco: #FFFFFF | --gris-claro: #F4F5F7 | --negro: #0F0F10
+   --azul-noche: #0B2545 | --azul-acero: #1D4E89 | --gris-pizarra: #6B7280 | --borde-suave: #E5E7EB
+   ========================================================================== */
+
+.service-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 15, 16, 0.65);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+  padding: 1rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.service-modal-card {
+  background: var(--blanco, #ffffff);
+  border-radius: 18px;
+  width: 100%;
+  max-width: 620px;
+  box-shadow: 0 25px 35px -5px rgba(11, 37, 69, 0.18), 0 10px 10px -5px rgba(15, 15, 16, 0.04);
+  overflow: hidden;
+  border: 1px solid var(--borde-suave, #e5e7eb);
+  animation: slideUp 0.25s ease-out;
+}
+
+.service-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem 1.75rem;
+  background: linear-gradient(135deg, var(--azul-noche, #0b2545) 0%, var(--azul-acero, #1d4e89) 100%);
+  color: var(--blanco, #ffffff);
+}
+
+.service-modal-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+}
+
+.service-modal-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: 0.35rem 0 0 0;
+  color: #ffffff;
+}
+
+.service-modal-close {
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  color: #ffffff;
+  font-size: 1.1rem;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.service-modal-close:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+.service-modal-body {
+  padding: 1.5rem 1.75rem;
+  max-height: 75vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background: var(--blanco, #ffffff);
+}
+
+/* Overview Box */
+.service-overview-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+  background: var(--gris-claro, #f4f5f7);
+  border: 1px solid var(--borde-suave, #e5e7eb);
+  border-radius: 14px;
+  padding: 1.25rem;
+}
+
+.service-overview-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--blanco, #ffffff);
+  color: var(--azul-noche, #0b2545);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--borde-suave, #e5e7eb);
+}
+
+.service-overview-desc {
+  font-size: 0.925rem;
+  line-height: 1.5;
+  color: var(--negro, #0f0f10);
+  margin: 0 0 0.6rem 0;
+}
+
+.service-dept-tag {
+  font-size: 0.8rem;
+  color: var(--gris-pizarra, #6b7280);
+}
+
+.service-dept-tag strong {
+  color: var(--azul-noche, #0b2545);
+}
+
+/* Grid of Attention Info Cards */
+.service-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+}
+
+.service-info-card {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: var(--gris-claro, #f4f5f7);
+  border: 1px solid var(--borde-suave, #e5e7eb);
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+}
+
+.service-info-card__icon {
+  font-size: 1.35rem;
+}
+
+.service-info-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  overflow: hidden;
+}
+
+.service-info-label {
+  font-size: 0.725rem;
+  font-weight: 600;
+  color: var(--gris-pizarra, #6b7280);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.service-info-value {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--negro, #0f0f10);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Frequent Procedures List */
+.service-procedures-block {
+  background: var(--gris-claro, #f4f5f7);
+  border: 1px solid var(--borde-suave, #e5e7eb);
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+}
+
+.service-procedures-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--azul-noche, #0b2545);
+  margin: 0 0 0.75rem 0;
+}
+
+.service-procedures-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.service-procedure-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+  color: var(--negro, #0f0f10);
+  line-height: 1.4;
+}
+
+/* Footer Actions */
+.service-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.85rem;
+  padding: 1.25rem 1.75rem;
+  background: var(--gris-claro, #f4f5f7);
+  border-top: 1px solid var(--borde-suave, #e5e7eb);
+}
+
+.service-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.2rem;
+  border-radius: 9px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.service-btn--secondary {
+  background: var(--blanco, #ffffff);
+  color: var(--negro, #0f0f10);
+  border: 1px solid var(--borde-suave, #e5e7eb);
+}
+
+.service-btn--secondary:hover {
+  background: var(--gris-claro, #f4f5f7);
+  border-color: var(--azul-acero, #1d4e89);
+  color: var(--azul-noche, #0b2545);
+}
+
+.service-btn--primary {
+  background: var(--azul-noche, #0b2545);
+  color: var(--blanco, #ffffff);
+  border: none;
+  box-shadow: 0 4px 12px rgba(11, 37, 69, 0.25);
+}
+
+.service-btn--primary:hover {
+  background: var(--azul-acero, #1d4e89);
+  box-shadow: 0 6px 16px rgba(29, 78, 137, 0.4);
+  transform: translateY(-1px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
