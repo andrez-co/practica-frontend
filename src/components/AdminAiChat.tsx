@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import type { PQRSData } from './TarjetaTramite';
-import './AdminAiChat.css';
+import '../styles/AdminAiChat.css';
 
 interface Message {
   id: string;

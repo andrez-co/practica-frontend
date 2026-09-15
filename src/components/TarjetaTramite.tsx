@@ -1,6 +1,6 @@
 import { useState, type FC, type ReactNode } from 'react';
 import { openPdfInNewTab } from '../utils/pdfHelper';
-import './TarjetaTramite.css';
+import '../styles/TarjetaTramite.css';
 
 export interface PQRSData {
   id: string;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
-import './ProfileModal.css';
+import '../styles/ProfileModal.css';
 
 interface ProfileModalProps {
   isOpen: boolean;

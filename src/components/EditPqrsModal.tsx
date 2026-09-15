@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabaseClient';
 import { useAuth } from '../context/AuthContext';
 import type { PQRSData } from './TarjetaTramite';
-import './CreatePqrsModal.css';
+import '../styles/CreatePqrsModal.css';
 
 interface EditPqrsModalProps {
   isOpen: boolean;

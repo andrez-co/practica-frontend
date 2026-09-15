@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import type { ServiceDetail } from './ServiceDetailModal';
-import './ServiceDetailPage.css';
+import type { ServiceDetail } from '../types';
+import '../styles/ServiceDetailPage.css';
 
 interface ServiceDetailPageProps {
   service: ServiceDetail;

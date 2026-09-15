@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './ConfirmDeleteModal.css';
+import '../styles/ConfirmDeleteModal.css';
 
 interface ConfirmDeleteModalProps {
   isOpen: boolean;

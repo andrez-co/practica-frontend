@@ -99,50 +99,47 @@ La configuración de la IA utiliza **temperatura 0.3** para respuestas objetivas
 ```
 proyecto-domingos/
 ├── public/
-│   ├── favicon.svg              # Ícono del portal (escudo institucional)
-│   └── icons.svg                # Sprite de íconos SVG
+│   └── favicon.svg              # Ícono del portal (escudo institucional)
 ├── src/
-│   ├── components/
+│   ├── components/              # Componentes React (.tsx)
 │   │   ├── AdminAiChat.tsx      # Chat con IA (Groq) para administradores
-│   │   ├── AdminAiChat.css
 │   │   ├── AdminDashboard.tsx   # Dashboard completo de administración
-│   │   ├── AdminDashboard.css
 │   │   ├── AuthModal.tsx        # Modal de login/registro (Supabase Auth)
-│   │   ├── AuthModal.css
 │   │   ├── ConfirmDeleteModal.tsx  # Modal de confirmación de eliminación
-│   │   ├── ConfirmDeleteModal.css
 │   │   ├── CreatePqrsModal.tsx  # Formulario para radicar nueva PQRS
-│   │   ├── CreatePqrsModal.css
 │   │   ├── EditPqrsModal.tsx    # Formulario para editar PQRS existente
-│   │   ├── FastPdfViewerModal.tsx  # Visor rápido de PDFs con Blob URL
-│   │   ├── FastPdfViewerModal.css
 │   │   ├── ProfileModal.tsx     # Modal de perfil de usuario
-│   │   ├── ProfileModal.css
-│   │   ├── ServiceDetailModal.tsx  # Tipos e interfaz de detalle de servicio
-│   │   ├── ServiceDetailModal.css
 │   │   ├── ServiceDetailPage.tsx   # Página completa de detalle por servicio
+│   │   └── TarjetaTramite.tsx   # Tarjeta visual de cada servicio público
+│   ├── styles/                  # Todos los estilos CSS separados
+│   │   ├── App.css              # Estilos globales del portal
+│   │   ├── index.css            # Reset y variables CSS base
+│   │   ├── AdminAiChat.css
+│   │   ├── AdminDashboard.css
+│   │   ├── AuthModal.css
+│   │   ├── ConfirmDeleteModal.css
+│   │   ├── CreatePqrsModal.css
+│   │   ├── ProfileModal.css
 │   │   ├── ServiceDetailPage.css
-│   │   ├── TarjetaTramite.tsx   # Tarjeta visual de cada servicio público
 │   │   └── TarjetaTramite.css
+│   ├── types/                   # Interfaces y tipos TypeScript
+│   │   └── index.ts             # ServiceDetail y demás interfaces
 │   ├── context/
-│   │   └── AuthContext.tsx      # Context global de autenticación (Supabase)
+│   │   └── AuthContext.tsx       # Context global de autenticación (Supabase)
 │   ├── lib/
-│   │   └── supabaseClient.ts   # Singleton de Supabase Client
+│   │   └── supabaseClient.ts    # Singleton de Supabase Client
 │   ├── utils/
-│   │   └── pdfHelper.ts        # Utilidades para optimización de PDFs (Blob cache)
-│   ├── App.tsx                  # Componente raíz — Enrutamiento y layout
-│   ├── App.css                  # Estilos globales del portal
-│   ├── index.css                # Reset y variables CSS base
-│   └── main.tsx                 # Punto de entrada — ReactDOM.createRoot
-├── .env                         # Variables de entorno (Supabase + API Keys)
-├── .env.example                 # Plantilla de variables de entorno
-├── index.html                   # HTML principal del SPA
-├── vite.config.ts               # Configuración de Vite (proxy Groq API)
-├── tsconfig.json                # Configuración base TypeScript
-├── tsconfig.app.json            # Configuración TypeScript para la app
-├── tsconfig.node.json           # Configuración TypeScript para Node
-├── package.json                 # Dependencias y scripts
-└── supabase_migration_direccion.sql  # Migración SQL para campo dirección
+│   │   └── pdfHelper.ts         # Utilidades para optimización de PDFs (Blob cache)
+│   ├── App.tsx                   # Componente raíz — Enrutamiento y layout
+│   └── main.tsx                  # Punto de entrada — ReactDOM.createRoot
+├── .env                          # Variables de entorno (Supabase + API Keys)
+├── .env.example                  # Plantilla de variables de entorno
+├── index.html                    # HTML principal del SPA
+├── vite.config.ts                # Configuración de Vite (proxy Groq API)
+├── tsconfig.json                 # Configuración base TypeScript
+├── tsconfig.app.json             # Configuración TypeScript para la app
+├── tsconfig.node.json            # Configuración TypeScript para Node
+└── package.json                  # Dependencias y scripts
 ```
 
 ---

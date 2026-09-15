@@ -8,10 +8,10 @@ import EditPqrsModal from './components/EditPqrsModal';
 import AdminDashboard from './components/AdminDashboard';
 import { ConfirmDeleteModal } from './components/ConfirmDeleteModal';
 import { openPdfInNewTab } from './utils/pdfHelper';
-import type { ServiceDetail } from './components/ServiceDetailModal';
+import type { ServiceDetail } from './types';
 import { ServiceDetailPage } from './components/ServiceDetailPage';
 import { supabase } from './lib/supabaseClient';
-import './App.css';
+import './styles/App.css';
 
 const getInitials = (name: string) => {
   if (!name) return 'U';

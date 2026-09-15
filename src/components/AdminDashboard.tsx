@@ -4,7 +4,7 @@ import { supabase } from '../lib/supabaseClient';
 import AdminAiChat from './AdminAiChat';
 import { ConfirmDeleteModal } from './ConfirmDeleteModal';
 import { openPdfInNewTab } from '../utils/pdfHelper';
-import './AdminDashboard.css';
+import '../styles/AdminDashboard.css';
 
 interface UserItem {
   id: string;
