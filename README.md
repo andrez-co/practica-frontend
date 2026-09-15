@@ -18,7 +18,7 @@
 
 ---
 
-## 📋 Descripción del Proyecto
+## Descripción del Proyecto
 
 **Portal Ciudadano** es una aplicación web full-stack diseñada para digitalizar y optimizar la interacción entre ciudadanos y entidades gubernamentales responsables de la prestación de servicios públicos domiciliarios en Colombia.
 
@@ -34,7 +34,7 @@ Y a los administradores:
 
 ---
 
-## 🛠️ Stack Tecnológico
+## Stack Tecnológico
 
 | Tecnología | Versión | Propósito |
 |:---:|:---:|:---|
@@ -47,7 +47,7 @@ Y a los administradores:
 
 ---
 
-## 🤖 Inteligencia Artificial
+## Inteligencia Artificial
 
 El portal integra un **asistente de IA** exclusivo para administradores que permite:
 
@@ -66,7 +66,7 @@ La configuración de la IA utiliza **temperatura 0.3** para respuestas objetivas
 
 ---
 
-## 👥 Roles y Permisos
+## Roles y Permisos
 
 ### 🧑‍💼 Ciudadano (Usuario Público)
 
@@ -144,7 +144,7 @@ proyecto-domingos/
 
 ---
 
-## 🚀 Cómo Ejecutar el Proyecto
+## Cómo Ejecutar el Proyecto
 
 ### Prerrequisitos
 
@@ -156,8 +156,8 @@ proyecto-domingos/
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/proyecto-domingos.git
-cd proyecto-domingos
+git clone https://github.com/andrez-co/servicio-publico-pqrs.git
+cd servicio-publico-pqrs
 
 # 2. Instalar dependencias
 npm install
@@ -198,7 +198,7 @@ npm run lint
 
 ---
 
-## 🗄️ Base de Datos (Supabase)
+## Base de Datos (Supabase)
 
 El proyecto utiliza las siguientes tablas en PostgreSQL:
 
@@ -211,7 +211,7 @@ El proyecto utiliza las siguientes tablas en PostgreSQL:
 
 ---
 
-## 🔒 Autenticación
+## Autenticación
 
 La autenticación se gestiona completamente a través de **Supabase Auth**:
 
@@ -222,7 +222,7 @@ La autenticación se gestiona completamente a través de **Supabase Auth**:
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto fue desarrollado como parte de un programa académico (Diplomado). Todos los derechos reservados.
 
